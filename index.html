@@ -71,7 +71,7 @@
     <section class="section_three">
       <div class="row-2">
         <div class="col-2 left">
-          <h1>Quick & Easy Process</h1>
+          <h1>Quick and Easy Process</h1>
           <p>Most calendars are designed for teams. Slate is designed<br>for freelancers who want a simple way to plan<br>their schedule.</p>
           <div class="">
             <button type="button" name="button" class="sign_up_for_free">sign up for free</button>
@@ -128,7 +128,7 @@
           <img draggable="false" src="./images/education_price.svg" alt="">
           <h3>Only 2 Operators</h3>
           <h3>Abandoned Cart</h3>
-          <h3>Facebook & Instagram Ads</h3>
+          <h3>Facebook and Instagram Ads</h3>
           <p>Order Notifications</p>
           <p>Landing Pages</p>
           <button type="button" name="button" class="sign_up_for_free">Order Now</button>
@@ -140,7 +140,7 @@
           <img draggable="false" src="./images/professional_price.svg" alt="">
           <h3>Only 2 Operators</h3>
           <h3>Abandoned Cart</h3>
-          <h3>Facebook & Instagram Ads</h3>
+          <h3>Facebook and Instagram Ads</h3>
           <h3>Order Notifications</h3>
           <p>Landing Pages</p>
           <button type="button" name="button" class="sign_up_for_free" style="margin-top:6%;">Order Now</button>
@@ -152,7 +152,7 @@
           <img draggable="false" src="./images/business_price.svg" alt="">
           <h3>Only 2 Operators</h3>
           <h3>Abandoned Cart</h3>
-          <h3>Facebook & Instagram Ads</h3>
+          <h3>Facebook and Instagram Ads</h3>
           <h3>Order Notifications</h3>
           <h3>Landing Pages</h3>
           <button type="button" name="button" class="sign_up_for_free" style="margin-top:6%;">Order Now</button>
@@ -162,11 +162,31 @@
     <section class="section_seven">
       <hr>
       <h1>SUBSCRIBE</h1>
-      <p>Subscribe to get exclusive news & offer</p>
+      <p>Subscribe to get exclusive news and offer</p>
       <div class="section_seven_row">
-        <input type="email" placeholder="Enter Your Address Email" name="email" required/>
-        <button type="button" name="button" class="sign_up_for_free">SUBSCRIBE</button>
-      </div>
+        <input id = "email" type="text" placeholder="Enter Your Address Email" name="email" required/>
+        <button id = "button" type="button" name="button" class="sign_up_for_free">SUBSCRIBE</button>
+	  </div>
+		
+	 <script>
+		 if (document.getElementById("button").clicked == true)
+			 {
+				 var email = document.getElementById("email");
+				 
+				 if (email.tagName.toLowerCase() == "email")
+					 {
+						 alert("You have successfully subscribed!");
+						 
+						 var JSONobject = {"email addresses" : [{"email" : email}]};
+					 }
+				 
+				 else
+					 {
+						 alert("Input is not in email format.");
+					 }
+			 }
+	 </script>
+		
     </section>
     <footer>
       <div class="footer_row">
